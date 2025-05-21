@@ -3,9 +3,9 @@
 ### CTI-110 school account
 ### For Upcoming assignments 
 
-# Things About Me
+# About Me
 
-## Things I Enjoy
+## Hobbies I Enjoy
 * **Gaming**
   *  *Xbox*
   *  *Marvel Rivals*
