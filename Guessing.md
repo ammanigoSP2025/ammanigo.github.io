@@ -18,6 +18,7 @@ flowchart TD
  Check -- Yes --> Correct[Display 'You guessed it right!']
  Correct --> End([End])
 
+# **Code Descriptions**  
 _**Start**_ : _Game Starts._       
 _**Init**_ : _The minimun and maximun number range._    
 _**Generate**_ : _A random number is selected by program._   
