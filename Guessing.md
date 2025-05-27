@@ -4,7 +4,8 @@ flowchart TD
  Generate --> Guess[Guess a number]
  Guess --> ReviewInput{Has to be a number}
 
- ReviewInput -- No --> Error[Display 'Please use a valid number and try again.'] --> Guess
+ ReviewInput -- No --> Error[Display 'Please use a valid number and try again.'] 
+ Error --> Guess
  ReviewInput -- Yes --> ReviewRange{has to guess within range}
 
  ReviewRange -- Yes --> Check{Was the correct number guessed?}
@@ -12,8 +13,8 @@ flowchart TD
 
  Check -- No --> HighOrLow{was the guess higher?}
  
- HighOrLow -- No --> TooLow[Display 'Too high.'] --> Guess
- HighOrLow -- Yes --> TooHigh[Display 'Too low.'] --> Guess
+ HighOrLow -- No --> TooLow[Display 'Too low.'] --> Guess
+ HighOrLow -- Yes --> TooHigh[Display 'Too high.'] --> Guess
  
  Check -- Yes --> Correct[Display 'You guessed it right!']
  Correct --> End([End])
@@ -27,7 +28,8 @@ _**ReviewInput**_: _Checks to make sure they pick a number._
 _**ReviewRange**_: _Checks to make sure the number is within the set min and max numbers._  
 _**Check**_: _Checks if the answer is correct. If not it gives a hint. If correct the game ends._  
 _**Hint**_: _Tells you if you need to go lower or higher._  
-_**Correct**_: _Correct guess._
+_**Correct**_: _Correct guess._  
+_**Error**_: _Invalid Input._
 
 
 
