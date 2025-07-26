@@ -59,7 +59,7 @@ function populateGradebook(data) {
         );
         // Add the table data columns to the table row
         row.appendChild(columns.name);
-        row.appendChILD(columns.grade);
+        row.appendChild(columns.grade);
         // Add the row to the table itself to make the data visible
         tableElm.appendChild(row);
     });
